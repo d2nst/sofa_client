@@ -20,6 +20,10 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'off',
     'react/prop-types': 'off',
     'prettier/prettier': 'error',
+    'react/self-closing-comp': 'warn',
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error',
+
     quotes: ['error', 'single', { allowTemplateLiterals: true }],
     'react-refresh/only-export-components': [
       'warn',
