@@ -41,10 +41,10 @@ const KakaoCallback = () => {
   };
 
   useEffect(() => {
-    if (KAKAO_CODE) {
+    if (KAKAO_CODE && !accessTokenFetching) {
       getAccessToken();
     }
-  }, [KAKAO_CODE]);
+  }, [KAKAO_CODE, setAccessTokenFetching]);
 
   return <div>_</div>;
 };
