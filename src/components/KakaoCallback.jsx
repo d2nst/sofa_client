@@ -44,7 +44,7 @@ const KakaoCallback = () => {
     if (KAKAO_CODE && !accessTokenFetching) {
       getAccessToken();
     }
-  }, [KAKAO_CODE, setAccessTokenFetching]);
+  }, [KAKAO_CODE]);
 
   return <div>_</div>;
 };
