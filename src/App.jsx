@@ -1,7 +1,7 @@
-import Card from './components/Card';
+import Login from './components/Login';
 
 function App() {
-  return <Card />;
+  return <Login />;
 }
 
 export default App;

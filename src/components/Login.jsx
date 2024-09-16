@@ -1,5 +1,5 @@
 import Button from './Button';
-const Card = () => {
+const Login = () => {
   return (
     <>
       <Button />
@@ -7,4 +7,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default Login;
