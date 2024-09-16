@@ -1,8 +1,8 @@
-import Button from '../components/Button';
+import KaKao from './Kakao';
 const Login = () => {
   return (
     <>
-      <Button />
+      <KaKao />
     </>
   );
 };
