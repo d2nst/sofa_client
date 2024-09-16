@@ -1,4 +1,4 @@
-import KaKao from './Kakao';
+import KaKao from '../components/Kakao';
 const Login = () => {
   return (
     <>
