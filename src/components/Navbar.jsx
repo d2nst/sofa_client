@@ -10,18 +10,14 @@ function Navbar() {
 
   return (
     <div className="navbar">
-      <div className="leftSide"></div>
+      <div className="leftSide" />
       <div className="middleSide">
         <Link to="/">
           <img src={Logo} style={{ width: '124px', height: '40px' }} />
         </Link>
       </div>
       <div className="rightSide">
-        <img
-          src={MenuIcon}
-          style={{ width: '24px', height: '24px' }}
-          onClick={() => setMenuOpen(!menuOpen)}
-        />
+        <img src={MenuIcon} style={{ width: '24px', height: '24px' }} onClick={() => setMenuOpen(!menuOpen)} />
         {menuOpen && (
           <ul className="menu dropdown">
             <li>menu1</li>
