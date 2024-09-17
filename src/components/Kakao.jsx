@@ -1,3 +1,5 @@
+import kakoImage from '../assets/kakao_login_btn.png';
+
 const KakaoLogin = () => {
   let REST_API_KEY = import.meta.env.VITE_KAKAO_REST_KEY;
   let REDIRECT_URI = `${import.meta.env.VITE_HOST}${import.meta.env.VITE_KAKAO_REDIRECT_URI}`;
@@ -10,7 +12,7 @@ const KakaoLogin = () => {
   return (
     <div>
       <button onClick={handleLogin}>
-        <img src="images/kakao_login_btn.png" />
+        <img src={kakoImage} />
       </button>
     </div>
   );
