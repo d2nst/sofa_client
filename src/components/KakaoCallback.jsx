@@ -21,6 +21,7 @@ const KakaoCallback = () => {
         {
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
+            'ngrok-skip-browser-warning': 'sofa',
           },
           withCredentials: true,
         }
