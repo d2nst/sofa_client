@@ -1,4 +1,4 @@
-import kakoImage from '../assets/kakao_login_btn.png';
+import KakaoTalkIcon from '../assets/kakaotalk.png';
 
 const KakaoLogin = () => {
   let REST_API_KEY = import.meta.env.VITE_KAKAO_REST_KEY;
@@ -10,11 +10,10 @@ const KakaoLogin = () => {
     window.location.href = kakaoToken_URL;
   };
   return (
-    <div>
-      <button onClick={handleLogin}>
-        <img src={kakoImage} />
-      </button>
-    </div>
+    <button onClick={handleLogin}>
+      <img src={KakaoTalkIcon} style={{ width: '30px', height: '30px', marginBottom: '7px' }} />
+      카카오 로그인
+    </button>
   );
 };
 

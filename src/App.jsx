@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Login from './pages/Login';
-import Home from './pages/Home';
+import Header from './components/Header';
+// import Login from './pages/Login';
 import NotFound from './components/NotFound';
 import KakaoCallback from './components/KakaoCallback';
 import KakaoLogin from './components/KakaoLogin';
@@ -9,10 +8,8 @@ import KakaoLogin from './components/KakaoLogin';
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Login />
+      <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/auth/kakao/callback" element={<KakaoCallback />} />
         <Route path="/kakaologin" element={<KakaoLogin />} />
         <Route path="*" element={<NotFound />} /> {/* 404 페이지 */}
